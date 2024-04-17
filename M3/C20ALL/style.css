@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --fonte-principal: "Passion One", sans-serif;
+    --fonte-secundaria: "Poppins", sans-serif;
+}
+
+html, body {
+    font-family: var(--fonte-secundaria);
+    background-color: gray;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--fonte-principal);
+    padding-top: 25px;
+    font-variant: small-caps;
+    font-size: 7vw;
+}
+
+header p {
+    padding-bottom: 25px;
+}
+
+a {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+a:hover {
+ text-decoration: underline;
+}
+
+section {
+    padding: 10vh 0;
+    padding-left: 30px;
+    line-height: 1.7em;
+    font-size: 22px;
+    /* font-size: 3.5vw; */
+}
+
+section p {
+    padding-bottom: 1.5em;
+}
+
+.normal {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.imagem {
+    background-color: #0000002c;
+    color: #ffffff;
+    box-shadow: inset 6px 6px 13px 0px #00000060;
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.imagem p {
+    display: inline-block;
+    background-color: #00000083;
+    box-shadow: 0 0 15px #0000006c;
+    text-shadow: 1px 1px 0px #000000;
+    padding: 15px;
+}
+
+#img-1 {
+    background-image: url(images/background001.jpg);
+}
+
+#img-2 {
+    background-image: url(images/background002.jpg); 
+}
+
+footer {
+    padding: 15px;
+}
