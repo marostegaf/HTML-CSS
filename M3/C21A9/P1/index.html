@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio P1</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+
+        }
+
+        td {
+            border: 1px solid #000000;
+            padding: 10px 25px;
+            text-align: center;
+        }
+
+        .par {
+            background-color: #eceaea;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td class="par">2</td>
+                <td rowspan="2">3</td>
+                <td class="par">4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="par" >6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td class="par" colspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td class="par" rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td class="par">12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td class="par">14</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
