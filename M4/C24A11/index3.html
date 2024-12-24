@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output</title>
+</head>
+<body>
+    <form action="" autocomplete="">
+        <div>
+            <label for="iano">Nascimento: </label>
+            <input type="number" name="ano" id="iano" oninput="calcIdade()">
+        </div>
+
+        <div>
+            <label for="iidade">Idade: </label>
+            <output id="iidade">0</output>
+        </div>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        function calcIdade() {
+            let anoAtual = new Date().getFullYear()
+
+            iidade.innerHTML = Number(anoAtual) - Number(iano.value)
+        }
+    </script>
+</body>
+</html>
