@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
     <header>
         <h1>Menu</h1>
-        <menu>
+        <span id="burguer" class="material-symbols-outlined" onclick="openMenu()">menu</span>
+        <menu id="menu">
             <ul>
-                <li><a href="#">Opção 1</a></li>
-                <li><a href="#">Opção 2</a></li>
-                <li><a href="#">Opção 3</a></li>
-                <li><a href="#">Opção 4</a></li>
-                <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Relógio</a></li>
+                <li><a href="#">Celular</a></li>
+                <li><a href="#">Desktop</a></li>
+                <li><a href="#">TV</a></li>
             </ul>
         </menu>
     </header>
@@ -26,5 +27,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minus officia, sit laboriosam voluptate corrupti consequatur aliquam nisi est autem dolor vitae, iste possimus quia suscipit nihil reprehenderit totam. Doloremque.</p>
         </article>
     </main>
+    <script>
+        function openMenu() {
+            if (menu.style.display == "block") {
+                menu.style.display = "none"
+            } else {
+                menu.style.display = "block"
+            }
+        }
+    </script>
 </body>
 </html>
