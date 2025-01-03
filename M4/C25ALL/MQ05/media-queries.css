@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+      menu {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #burguer {
+        display: none;
+    }
+    
+    menu ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5.5%;
+    }
+
+    menu ul li a {
+        width: 170px;
+    }
+
+    main {
+       max-width: 1366px;
+    }
+}

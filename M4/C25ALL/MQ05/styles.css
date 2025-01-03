@@ -2,6 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -52,12 +53,13 @@ menu a {
     border-top: 2px solid #2E5077;
     background-color: #4DA1A9;
     color: #F6F4F0;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
 }
 
 menu a:hover {
     background-color: #F6F4F0;
     color: #4DA1A9;
-    font-weight: 600;
+    transform: scale(1.05);
 }
 
 main {
