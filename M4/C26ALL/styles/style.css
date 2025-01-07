@@ -1,21 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
 
-body {
+main {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .login {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 50px;
 
-    height: 90vh;
+    gap: 10px;
+    padding: 25px 45px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.37);
 }
 
 .imagem img {
@@ -29,24 +37,24 @@ body {
     gap: 20px;
     
     padding: 25px;
-    border: 2px solid #6582fd;
     border-radius: 15px;
 }
 
 .formulario h1 {
-    color: #6582fd;
-    font-weight: 900;
+    color: #2626bc;
+    font-weight: 500;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
 }
 
 fieldset {
     border: none;
     display: flex;
+    justify-content: center;
 }
 
 fieldset label {
@@ -56,5 +64,21 @@ fieldset label {
 }
 
 fieldset input {
+    color: #000000;
+    font-size: 14px;
+    
     border: 2px solid #6582fd;
+    outline: none;
+    padding-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .imagem img {
+        width: 150px;
+    }
+    
+    .login {
+        flex-direction: column;
+        max-width: 90%;
+    }
 }
