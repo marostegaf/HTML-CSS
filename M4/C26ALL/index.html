@@ -20,15 +20,21 @@
             <div class="formulario">
                 <h1>Login</h1>
                 <form action="">
-                    <fieldset>
+                    <fieldset class="fill">
                         <label for="iuser"><i class="fa-solid fa-user"></i></label>
-                        <input type="text" name="user" id="iuser">
+                        <input type="text" name="user" id="iuser" placeholder="Usuário" autocomplete="name" required maxlength="30">
                     </fieldset>
-                    <fieldset>
+                    <fieldset class="fill">
                         <label for="ipassword"><i class="fa-solid fa-lock"></i></label>
-                        <input type="password" name="password" id="ipassword">
+                        <input type="password" name="password" id="ipassword" placeholder="Senha" autocomplete="current-password" required max="20">
                     </fieldset>
                 </form>
+                <fieldset class="click">
+                    <input type="submit" value="Entrar">
+                    <a href="#">Esqueci minha senha</a>   
+
+                </fieldset>
+
             </div>
         </section>
     </main>

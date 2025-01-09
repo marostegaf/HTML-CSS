@@ -23,7 +23,7 @@ main {
     gap: 10px;
     padding: 25px 45px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.37);
+    box-shadow: 0 0 15px #0000005e;
 }
 
 .imagem img {
@@ -41,29 +41,41 @@ main {
 }
 
 .formulario h1 {
-    color: #2626bc;
+    color: #6582fd;
+    font-size: 32px;
     font-weight: 500;
+
+    color: transparent;
+    background-image: linear-gradient(to right,#2626bc,#6582fd);
+    background-clip: text;
+    transition: background-position 1s ease;
+    background-size: 200%;
+    background-position: right;
 }
 
+.formulario h1:hover {
+    background-position: left; /* Move o gradiente para a direita ao passar o mouse */
+}
 form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-fieldset {
+.fill {
     border: none;
     display: flex;
     justify-content: center;
 }
 
-fieldset label {
+.fill label {
     background-color: #6582fd;
     color: #ffffff;
     padding: 5px 15px;
+    cursor: pointer;
 }
 
-fieldset input {
+.fill input {
     color: #000000;
     font-size: 14px;
     
@@ -71,6 +83,47 @@ fieldset input {
     outline: none;
     padding-left: 5px;
 }
+
+.fill input:focus {
+    caret-color: #6582fd;
+}
+
+.click {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    padding-top: 10px;
+}
+
+.click input {
+    background-color: #6582fd;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 6px 20px;
+    border: 2px solid #6582fd;
+
+    cursor: pointer;
+}
+
+.click input:hover {
+    background-color: #FFFFFF;
+    color: #6582fd;
+    border: 2px solid #6582fd;
+}
+
+.click a {
+    color: #6582fd;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.click a:hover {
+    text-decoration: underline;
+}
+
 
 @media (max-width: 768px) {
     .imagem img {
