@@ -51,11 +51,13 @@ main {
     transition: background-position 1s ease;
     background-size: 200%;
     background-position: right;
+    cursor: pointer;
 }
 
 .formulario h1:hover {
     background-position: left; /* Move o gradiente para a direita ao passar o mouse */
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -88,14 +90,21 @@ form {
     caret-color: #6582fd;
 }
 
+#entrouComSucesso {
+    height: 20px;
+    font-size: 15px;
+    color: #2626bc;
+    margin-top: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
 .click {
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-
-    padding-top: 10px;
+    gap: 25px;
 }
 
 .click input {
@@ -104,6 +113,7 @@ form {
     font-size: 16px;
     padding: 6px 20px;
     border: 2px solid #6582fd;
+    border-radius: 5px;
 
     cursor: pointer;
 }
@@ -133,5 +143,18 @@ form {
     .login {
         flex-direction: column;
         max-width: 90%;
+    }
+
+    .click {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .click {
+        width: 100%;
+    }
+
+    .click input {
+        width: 100%;
     }
 }
