@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .conteiner {
+            display: flex;
+            background-color: bisque;
+        }
+
+        .item {
+            padding: 10px;
+            background-color: #3ec9ec;
+            border: 1px solid black;
+        }
+
+        .letterA {
+            flex: 1 1 300px;
+        }
+
+        .letterB {
+            flex: 4 8 300px
+        }
+
+        .letterC {
+            flex: 8 16 300px
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item letterA">A</div>
+        <div class="item letterB">B</div>
+        <div class="item letterC">C</div>
+    </div>
+</body>
+</html>
