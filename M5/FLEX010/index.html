@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .shrink-grow {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .explicacao {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .conteiner {
+            display: flex;
+            background-color: lightsalmon;
+        }
+
+        .item {
+            padding: 20px 0;
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 400px;
+            flex-shrink: 0;
+        }
+
+        .item2 {
+            padding: 20px 0;
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 250px;
+            flex-grow: 1;
+        }
+
+        .grow-wrap {
+            display: flex;
+            background-color: lightsalmon;
+            flex-flow: row wrap;
+        }
+
+        .item3 {
+            padding: 20px 0;
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 200px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="shrink-grow">
+        <h1 class="explicacao">Diminuindo a tela, o tamanho dos itens ficando por conta do shrink: 0</h1>
+        <div class="conteiner">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+        </div>
+
+        <h1 class="explicacao">Aumentando a tela, o tamanho dos itens vai acompanhar por conta do grow: 1</h1>
+        <div class="conteiner">
+            <div class="item2">A</div>
+            <div class="item2">B</div>
+            <div class="item2">C</div>
+        </div>
+
+        <h1 class="explicacao">Diminuindo a tela, o item que quebrar vai ocupar todo o espaço abaixo por conta do grow: 1</h1>
+        <div class="grow-wrap">
+            <div class="item3">A</div>
+            <div class="item3">B</div>
+            <div class="item3">C</div>
+        </div>
+    </div>
+</body>
+</html>
