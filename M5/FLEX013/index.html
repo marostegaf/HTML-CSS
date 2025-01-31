@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <script src="script.js" defer></script>
 </head>
-<body>
+<body onresize="esconderAparecerMenuAoMudarTamanho()">
     <header>
-        <h1>Nome Aqui</h1>
-        <nav>
+        <h1>My Favorite Pet</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="abrirMenu()">menu</span>
+        <nav id="menu" style="display: none;">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
             <a href="#">Opção 3</a>

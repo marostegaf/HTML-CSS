@@ -13,6 +13,17 @@
     --dark-pink: #FF5C8D;
 }
 
+/* HAMBURGUER */
+#burguer {
+    color: var(--dark-pink);
+    background-color: var(--white-pink);
+
+    padding: 8px;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
 body {
     background-color: var(--white-pink);
     width: 100vw;
@@ -23,6 +34,12 @@ body {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 10px;
+    
     margin: 10px;
     padding: 10px;
 
@@ -31,14 +48,14 @@ header {
     color: #FDEFF4;
 }
 
-nav {
+#menu {
     display: flex;
-    gap: 20px;
-        
-    padding: 20px 0;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-nav a {
+#menu a {
     padding: 10px 15px;
     border-radius: 10px;
 
@@ -53,8 +70,10 @@ nav a {
     cursor: pointer;
 }
 
-nav a:hover {
-    transform: scale(1.05);
+#menu a:hover {
+    background-color: var(--white-pink);
+    color: var(--dark-pink);
+    transition: background-color .5s;
 }
 
 main {
