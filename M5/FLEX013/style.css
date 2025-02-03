@@ -15,6 +15,7 @@
 
 /* HAMBURGUER */
 #burguer {
+    display: none;
     color: var(--dark-pink);
     background-color: var(--white-pink);
 
@@ -46,6 +47,17 @@ header {
     border-radius: 10px;
     background-color: var(--dark-pink);
     color: #FDEFF4;
+}
+
+.texto-icone {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cachorro-feliz {
+    width: 45px;
+    filter: 1;
 }
 
 #menu {
@@ -82,4 +94,36 @@ main {
 
     border-radius: 10px;
     background-color: var(--ligth-pink);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1050px) {   
+    #burguer {
+        display: flex;
+    }
+
+    .texto-icone {
+        width: 100%;
+
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .cachorro-feliz {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    #menu {
+        flex-direction: column;
+        text-align: center;
+
+        width: 100%;
+    }
 }

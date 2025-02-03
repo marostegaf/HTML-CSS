@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Responsivo</title>
+    <title>My Favorite Pet</title>
+    <link rel="shortcut icon" href="images/cachorro-feliz.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <script src="script.js" defer></script>
 </head>
 <body onresize="esconderAparecerMenuAoMudarTamanho()">
     <header>
-        <h1>My Favorite Pet</h1>
-        <span id="burguer" class="material-symbols-outlined" onclick="abrirMenu()">menu</span>
+        <div class="texto-icone">
+            <h1>My Favorite Pet</h1>
+            <span id="burguer" class="material-symbols-outlined" onclick="abrirMenu()">menu</span>
+            <img class="cachorro-feliz" src="images/cachorro-feliz.png" alt="">
+        </div>
         <nav id="menu" style="display: none;">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
@@ -19,7 +23,6 @@
             <a href="#">Opção 4</a>
             <a href="#">Opção 5</a>
             <a href="#">Opção 6 </a>
-
         </nav>
     </header>
     <main>
